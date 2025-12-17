@@ -10,7 +10,7 @@ This submission contains the **Design-Only Track (Part 1)** deliverables for the
 |------|-------------|
 | `use_case.md` | Problem statement, user descriptions, data sources, and workflow overview |
 | `architecture_plan.md` | Service mapping, data flow narrative, security/governance considerations and cost analysis |
-| `architecture_diagram.png` | Architecture diagram, visual representation of the cloud infrastructure and data flow |
+| `architecture_diagram.png` | Architecture diagram (visual representation of the cloud infrastructure and data flow) |
 | `reflection.md` | Analysis of design confidence, alternative considered, and future enhancements |
 
 ## Architecture Summary
