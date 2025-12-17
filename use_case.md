@@ -2,8 +2,7 @@
 
 ## Problem Statement
 - The healthcare scenario I selected is: a simple patient instake and triage app for a clinic. 
-- I selected this scenario because many clinics rely on paper forms for patient intake. That process is slow and generates data that requires manual entry into an Electronic Health Record (EHR) system which can lead to transcription/data entry errors. 
-- Clinics could really benefit from a streamlined, secure way to digitize patient intake, assess triage urgency based on reported symptoms and provide clinicians with organized patient queues. 
+- I selected this scenario because many clinics rely on paper forms for patient intake. That process is slow and generates data that requires manual entry into an Electronic Health Record (EHR) system which can lead to transcription/data entry errors. Clinics could really benefit from a streamlined, secure way to digitize patient intake, assess triage urgency based on reported symptoms and provide clinicians with organized patient queues. 
 
 ## Users
 1. Patients — Individuals arriving at the clinic who need to check in, provide demographic and symptom information, and upload relevant documents (insurance card images).
@@ -33,7 +32,7 @@
 - Step 3: Triage Scoring
     → Upon submission, a rule-based algorithm calculates triage priority
     → Priority levels: Emergent (1), Urgent (2), Semi-Urgent (3), Non-Urgent (4)
-    → Score is based on symptom keywords, vital signs (if entered), and chief complaint
+    → Score is based on symptom keywords, vital signs, and chief complaint
 
 - Step 4: Queue Management
     → Front desk staff dashboards query MongoDB for checked-in patients, sorted by triage priority and time 
