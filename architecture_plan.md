@@ -82,7 +82,7 @@ Summary:
 
 
 ## 4. Cost and Operational Considerations
-- The primary cost driver in this architecture is the managed database, MongoDB Atlas, as database instances typically incur higher costs than serverless compute. While Cloud Run and Cloud Storage are inexpensive for the low-to-medium traffic of a local small clinic, the data layer requires consistent availability. However, by utilizing the MongoDB Atlas "M0" free tier and Cloud Run’s monthly allowance of 2 million requests, the operational cost for a prototype ould remain low.
+- The primary cost driver in this architecture is the managed database, MongoDB Atlas, as database instances typically incur higher costs than serverless compute. While Cloud Run and Cloud Storage are inexpensive for the low-to-medium traffic of a local small clinic, the data layer requires consistent availability. However, by utilizing the MongoDB Atlas "M0" free tier and Cloud Run’s monthly allowance of 2 million requests, the operational cost for a prototype would remain low.
 - To maintain a "student budget," this design intentionally avoids always-on Virtual Machines (VMs). Cloud Run only bills for the exact duration of a request, meaning the clinic pays nothing overnight or during low-traffic periods. Furthermore, by using Cloud Storage lifecycle policies to move older insurance images to "Nearline" or "Archive" storage classes, we ensure that long-term data retention does not lead to unexpected storage fees. 
 
 # Architecture Diagram
